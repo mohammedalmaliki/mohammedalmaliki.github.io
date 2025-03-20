@@ -3,110 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Kul Hemsida</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        nav a {
-            color: white;
-            float: left;
-            display: block;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .image-section img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-    </style>
+    <title>Gustav Adolfs Torg - Malmö</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>    </style>
 </head>
 <body>
 
     <header>
-        <h1>Välkommen till min hemsida!</h1>
-        <p>Här hittar du allt som är färgglatt och roligt!</p>
+        <h1>Gustav Adolfs Torg i Malmö</h1>
+        <p>En plats full av historia och kultur</p>
     </header>
 
     <nav>
-        <a href="#">Hem</a>
-        <a href="#">Om Oss</a>
-        <a href="#">Kontakt</a>
+        <a href="#home" class="active" id="home-link">Hem</a>
+        <a href="#about" id="about-link">Om Torg</a>
+        <a href="#timeline" id="timeline-link">Historisk Tidslinje</a>
+        <a href="#gallery" id="gallery-link">Galleri</a>
+        <a href="#map" id="map-link">Karta</a>
     </nav>
 
-    <section>
+    <section id="home">
         <div class="image-section">
-            <h2>Se på denna härliga bild!</h2>
-            <img src="https://via.placeholder.com/1200x500/FF5733/FFFFFF?text=New+Placeholder+Image" alt="New Placeholder Image">
-            <img src="img/kalleanka.webp">
+            <h2>Välkommen till Gustav Adolfs Torg</h2>
+            <img src="https://via.placeholder.com/1200x600?text=Gustav+Adolfs+Torg" alt="Gustav Adolfs Torg">
         </div>
 
         <div class="card">
-            <h3>Kul Faktum</h3>
-            <p>Visste du att det finns över 7 miljarder människor på jorden, och varje person har en unik historia att berätta?</p>
+            <h3>Om Gustav Adolfs Torg</h3>
+            <p>Gustav Adolfs Torg är en central plats i Malmö, uppkallad efter Gustav II Adolf, en av Sveriges största regenter. Torget är hem för flera viktiga landmärken och har en rik historia som sträcker sig tillbaka till 1600-talet. Statyn av Gustav II Adolf på torget är en symbol för hans roll i att stärka Sveriges stormaktsstatus.</p>
         </div>
+    </section>
 
+    <section id="about">
         <div class="card">
-            <h3>Hälsningar från Hemsidan!</h3>
-            <p>Vi hoppas att du gillar den här hemsidan! Här kommer det alltid finnas något nytt och kul att läsa och titta på!</p>
+            <h3>Om Gustav II Adolf</h3>
+            <p>Gustav II Adolf var kung av Sverige från 1611 till 1632 och är känd för sina framstående prestationer under Trettioåriga kriget. Hans regeringstid markerade början på Sveriges dominans i Europa. Gustav II Adolf förlorade sitt liv i slaget vid Lützen, men hans arv lever vidare genom statyer och minnesmärken, inklusive den på Gustav Adolfs Torg i Malmö.</p>
         </div>
+    </section>
 
+    <section id="timeline" class="timeline">
+        <h2>Historisk Tidslinje</h2>
+        <div class="event">
+            <h4>1611 - Gustav II Adolf blir kung</h4>
+            <p>Gustav II Adolf efterträder sin far, Karl IX, och börjar sin regeringstid som en av Sveriges största regenter.</p>
+        </div>
+        <div class="event">
+            <h4>1632 - Slaget vid Lützen</h4>
+            <p>Gustav II Adolf stupade i slaget vid Lützen, men hans ledarskap hade redan säkrat Sveriges position som en av Europas mäktigaste stater.</p>
+        </div>
+        <div class="event">
+            <h4>1876 - Statyn av Gustav II Adolf invigs</h4>
+            <p>En staty till minne av Gustav II Adolf invigdes på Gustav Adolfs Torg i Malmö för att hedra hans historiska betydelse.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galleri</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/500x300?text=Bild+1" alt="Bild 1">
+            <img src="https://via.placeholder.com/500x300?text=Bild+2" alt="Bild 2">
+            <img src="https://via.placeholder.com/500x300?text=Bild+3" alt="Bild 3">
+            <img src="https://via.placeholder.com/500x300?text=Bild+4" alt="Bild 4">
+            <img src="https://via.placeholder.com/500x300?text=Bild+5" alt="Bild 5">
+            <img src="https://via.placeholder.com/500x300?text=Bild+6" alt="Bild 6">
+        </div>
+    </section>
+
+    <section id="map">
+        <h2>Interaktiv Karta</h2>
+        <div id="map"></div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Min Kul Hemsida | All Rights Reserved</p>
+        <p>&copy; 2025 Gustav Adolfs Torg | All Rights Reserved</p>
     </footer>
 
+    <script>
+        // Google Maps API
+        function initMap() {
+            var malmo = { lat: 55.604981, lng: 13.003822 };  // Koordinater för Gustav Adolfs Torg
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: malmo
+            });
+            var marker = new google.maps.Marker({
+                position: malmo,
+                map: map,
+                title: 'Gustav Adolfs Torg, Malmö'
+            });
+        }
+
+        // Dynamisk navigering och sektioner
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(e.target.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop - 80, // justera för headern
+                    behavior: 'smooth'
+                });
+
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+
+    <!-- Google Maps API Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
