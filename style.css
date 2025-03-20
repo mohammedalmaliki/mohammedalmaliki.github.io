@@ -1,0 +1,179 @@
+    /* Grundläggande stil */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff;
+        color: #333;
+        overflow-x: hidden;
+    }
+
+    header {
+        background-color: #96af4c;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    nav {
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+        color: white;
+        padding: 16px 25px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+    nav a.active {
+        background-color: #96af4c;
+    }
+
+    section {
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .image-section img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .image-section img:hover {
+        transform: scale(1.05);
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .timeline {
+        margin-top: 40px;
+    }
+
+    .timeline .event {
+        margin-bottom: 30px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    .timeline .event:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: #96af4c;
+        border-radius: 50%;
+    }
+
+    .timeline .event h4 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .timeline .event p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Google Maps container */
+    #map {
+        height: 400px;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    /* Image gallery styling */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Responsivitet */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            font-size: 16px;
+            padding: 12px 20px;
+        }
+
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+    
