@@ -80,19 +80,6 @@
     </footer>
 
     <script>
-        // Google Maps API
-        function initMap() {
-            var malmo = { lat: 55.604981, lng: 13.003822 };  // Koordinater för Gustav Adolfs Torg
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: malmo
-            });
-            var marker = new google.maps.Marker({
-                position: malmo,
-                map: map,
-                title: 'Gustav Adolfs Torg, Malmö'
-            });
-        }
 
         // Dynamisk navigering och sektioner
         const navLinks = document.querySelectorAll('nav a');
@@ -112,11 +99,10 @@
     </script>
 
     <!-- Google Maps API Script -->
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.8357706922684!2d13.00078141592842!3d55.60303188051992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3fc264a15d5%3A0xd1cf5e2cd2446c0d!2sGustav%20Adolfs%20torg%2C%20211%2039%20Malm%C3%B6!5e0!3m2!1ssv!2sse!4v1713965568007!5m2!1ssv!2sse"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.382360368617!2d13.00238331592863!3d55.60585028052039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a1f8587e1fd9%3A0xe0c9bd78939dbe0d!2sGustav%20Adolfs%20torg%2C%20Malm%C3%B6!5e0!3m2!1ssv!2sse!4v1614357841383!5m2!1ssv!2sse" 
+    allowfullscreen="" loading="lazy">
   </iframe>
+  
 </body>
 </html>
